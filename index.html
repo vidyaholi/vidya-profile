@@ -23,3 +23,35 @@ BhagyaShree(Bcom Graduate and trained SAP)
 Address : Neelagund
 TQ: Badami
 Dist: Bagalkot
+
+
+
+
+<div class="jumbotron jumbotron-local" style="overflow:scroll">
+<!--   <br><br> -->
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">App Region</th>
+        <th onclick="sortTable(1)">Redis Region</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+          <tr>
+            <td>
+              <div id="predict_content" class="content">{{ app_response }}
+                <img src="/static/status_check.png" alt="status" height="30" width="30">
+              </div>
+            </td>
+            <td>
+              <div id="predict_content" class="content">{{ db_response }}
+                <img src="/static/status_check.png" alt="status" height="30" width="30">
+              </div>
+            </td>
+          <!--   <td> <a target="_blank" href="http://localhost:5000/db_status"> Redis Status
+                <img src="/static/status_check.png" alt="status" height="30" width="30">
+              </a></td> -->
+          </tr>
+    </tbody>
+  </table>
+</div>
